@@ -180,3 +180,180 @@ h2.text_img {
     padding: 0;
     text-shadow: 4px 4px 8px #000;
 }
+
+/* start main content */
+
+.about_section {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.about_top {
+    width: 100%;
+    text-align: center;
+}
+
+.about_title {
+    color: #000;
+    display: inline-block;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.8em;
+    padding: 0;
+    margin: 0;
+}
+
+.about_title::after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 4px;
+    background-color: #7ebd26
+}
+
+.about_text-first,
+.about_text-message {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.5em;
+    font-size: 1.4rem;
+}
+
+.about_text-message {
+    font-size: 1em;
+}
+
+.about_bottom {
+    display: flex;
+}
+
+.what-we-do {
+    margin: 2em 2em 0 0;
+}
+
+.what-we-do_title {
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 0 0 0.5em 0;
+    margin: 0;
+}
+.what-we-do_img {
+    width: 100%;
+}
+
+.what-we-do_message {
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    line-height: 1.8;
+    padding-top: 1em;
+    margin-bottom: 2em;
+}
+
+a.readmore {
+    text-decoration: none;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    margin-top: 1em;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: 0.1em;
+}
+
+/* start menu acordeon */
+
+.why-choose {
+    margin: 2em 2em 0 0;
+}
+
+.ac-menu_title {
+    font-size: 2.3rem;
+    text-transform: capitalize;
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 0 0 0.5em 0;
+    margin: 0;
+}
+
+
+.ac-menu_container {
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .ac-menu_container input {
+    display: none;
+  }
+  
+  .ac-menu_container label {
+    height: 30px;
+    border: 1px solid #999;
+    color: #999;
+    padding: 2em 2em;
+    position: relative;
+    z-index: 20;
+    display: block;
+    cursor: pointer;
+    line-height: 0;
+  }
+
+  .ac-menu_container label::after {
+    content: "+";
+    display: block;
+    position: relative;
+    float: right;
+    width: 24px;
+    height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+  }
+
+  .ac-menu_container label:hover::after {
+    content: "-";
+    display: block;
+    position: relative;
+    float: right;
+    width: 24px;
+    height: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3em;
+    padding: 0;
+    margin-left: 10px;
+  }
+  
+  .ac-menu_container article {
+    background: #eee;
+    overflow: hidden;
+    height: 0;
+    position: relative;
+    z-index: 10;
+    transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+  }
+  
+  .item_text {
+    color: #555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9em;
+    line-height: 1.8;
+    padding-top: 1em;
+    margin-bottom: 2em;
+    padding: 1.5em;
+  }
+  
+  .ac-menu_container input:checked ~ article {
+    height: auto;
+  }
