@@ -6,7 +6,7 @@
     <title>Agricola Torrijos S.L.</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- header section starts -->
@@ -34,8 +34,8 @@
                 </ul>
             </nav>
             <div class="top_search">
-                <input type="text" value="Search..">
-                <input type="submit" value="">
+                <input class="search" type="text" value="Search..">
+                <input class="search_icon" type="submit" value="">
             </div>
         </div>
         <div class="container_img">
@@ -128,11 +128,11 @@
         </section>
         
                 
-        <section class="">
-            <div class="flex-container">
-                <article class="article_categories">
-                    <h3 class="title_categories">categories</h3>
-                    <p class="message_categories">Praesent sodales pretium tellus, et euis mod neque malesuada et Quisque eget ante lorem. Proin tincidu, lorem ut conv allis egestas</p>
+        <section class="container_last">
+            <div class="flex_container">
+                <article class="article article_categories">
+                    <h3 class="title title_categories">categories</h3>
+                    <p class="message message_categories">Praesent sodales pretium tellus, et euis mod neque malesuada et Quisque eget ante lorem. Proin tincidu, lorem ut conv allis egestas</p>
                     <ul class="list_categories">
                         <li class="item_categories"><a href="#" class="link_categories">Quisque eget ante lorem Proin tincidunt</a></li>
                         <li class="item_categories"><a href="#" class="link_categories">Nam imperdiet ac eros bibendum viverra</a></li>
@@ -144,31 +144,59 @@
                         <li class="item_categories"><a href="#" class="link_categories">Nam gravida rutrum nisi a rhoncus</a></li>
                     </ul>
                 </article>
-                <article class="products">
-                    <h3 class="products_title">products</h3>
+                <article class="article products">
+                    <h3 class="title products_title">products</h3>
                     <img src="img/products-image-index.jpg" alt="" class="products_img">
-                    <h4 class="products_title-message">Quisque eget ante lorem. Proin tincidu, lorem ut convallis egestas</h4>
-                    <p class="products_message">
+                    <h4 class="title_message products_title-message">Quisque eget ante lorem. Proin tincidu, lorem ut convallis egestas</h4>
+                    <p class="message products_message">
                         Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspend isse eget mi diam. Quisque eget ante lorem. Proin tincidunt, lorem ut convallis egestas, enim justo placerat magna, nec dictum enim ante id elit.
                     </p>
                     <a href="#" class="readmore">read more</a>
                 </article>
-                <article class="resource">
-                    <h3 class="resource_title">resource</h3>
+                <article class="article resource">
+                    <h3 class="title resource_title">resource</h3>
                     <img src="img/resource-tractor.jpg" alt="" class="resource_img">
-                    <h4 class="resource_title-message">Praesent sodales pretium tellus, et euismod neque malesuada et</h4>
-                    <p class="resource_message">
+                    <h4 class="title_message resource_title-message">Praesent sodales pretium tellus, et euismod neque malesuada et</h4>
+                    <p class="message resource_message">
                         Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspend isse eget mi diam. Quisque eget ante lorem. Proin tincidunt, lorem ut convallis egestas, enim justo placerat magna, nec dictum enim ante id elit.
                     </p>
                     <a href="#" class="readmore">read more</a>
                 </article>
             </div>
         </section>
-        <section class="get-in-touch"></section>
+        <section class="get-in-touch">
+            <div class="flex_container">
+                <div class="flex_column">
+                    <h3 class="title title_get">get in touch</h3>
+                    <p class="message message_get">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspeisse eget diam</p>
+                    <div class="social_icon"></div>
+                </div>
+                <div class="flex_column">
+                    <h3 class="title title_get">Dirección</h3>
+                    <p class="message direction">Plaza España, 9</p>
+                    <p class="message direction">Escalonilla 45523 Toledo</p>
+                    <p class="message direction"><strong>Teléfono:</strong> 925 55 66 77</p>
+                    <a href="#" class="message email">agricolatorrijos@gmail.com</a>
+                </div>
+                <div class="flex_column">
+                    <h3 class="title title_get">Contacto</h3>
+                    <form action="" class="index">
+                        <input type="text" class="text" value="Nombre">
+                        <input type="text" class="text" value="Apellido">
+                        <input type="tel" class="text" value="Teléfono">
+                        <input type="email" class="text" value="e-mail">
+                        <textarea name="" id="" cols="30" rows="10" class="text">Mensage</textarea>
+                        <input id="button_form" type="submit" value="Enviar">
+                    </form>
+                </div>
+            </div>
+        </section>
     
     </main>
     
-    <footer class="footer"></footer>
+    <footer class="footer">
+        © 2020 All rights reserved | Design by <span>AlarconCode</span>
+    </footer>
     
 </body>
 </html>
