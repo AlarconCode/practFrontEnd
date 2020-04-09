@@ -181,11 +181,11 @@
                 <div class="flex_column">
                     <h3 class="title title_get">Contacto</h3>
                     <form action="" class="index">
-                        <input type="text" class="text" value="Nombre">
-                        <input type="text" class="text" value="Apellido">
-                        <input type="tel" class="text" value="Teléfono">
-                        <input type="email" class="text" value="e-mail">
-                        <textarea name="" id="" cols="30" rows="10" class="text">Mensage</textarea>
+                        <input type="text" class="text" onfocus="this.placeholder = ''" onblur="if (this.placeholder == '') {this.placeholder = 'Nombre'} " placeholder="Nombre">
+                        <input type="text" class="text" onfocus="this.placeholder = ''" onblur="if (this.placeholder == '') {this.placeholder = 'Apellidos'} " placeholder="Apellidos">
+                        <input type="tel" class="text" onfocus="this.placeholder = ''" onblur="if (this.placeholder == '') {this.placeholder = 'Teléfono'} " placeholder="Teléfono">
+                        <input type="email" class="text" onfocus="this.placeholder = ''" onblur="if (this.placeholder == '') {this.placeholder = 'email'} " placeholder="email">
+                        <textarea name="" id="" cols="30" rows="10" class="text" onfocus="this.placeholder = ''" onblur="if (this.placeholder == '') {this.placeholder = 'Mensaje'} " placeholder="Mensaje"></textarea>
                         <input id="button_form" type="submit" value="Enviar">
                     </form>
                 </div>
